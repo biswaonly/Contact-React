@@ -1,0 +1,28 @@
+@media only screen and (min-width: 450px){
+	.contact_right_part{
+		width: 50%;
+		background-color: darkkhaki;
+		display: inline-block !important;
+		max-height: 100vh;
+	}
+}
+@media only screen and (min-width: 750px){
+	.contact_right_part{
+		min-height: 496px;
+	}
+}
+
+
+/* RIGHT PART */
+
+.contact_right_part{
+	display: none;
+}
+.right_part_avatar{
+	/* margin: auto 10px; */
+	/* height: 55px; */
+	/* width: 55px; */
+	/* border-radius: 30px; */
+	/* overflow: hidden; */
+	/* background-color: yellow; */
+}

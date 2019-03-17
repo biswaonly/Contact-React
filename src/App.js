@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Contact from './component/Contact';
+import { withRouter } from 'react-router';
+import { connect} from 'react-redux';
 
 class App extends Component {
+  searchBarClose=()=>{
+    this.props.addToState({searchBarOpen: false})
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App" onClick={this.searchBarClose}>
+        <Contact />
       </div>
     );
   }
 }
 
-export default App;
+function mapStateToProps(state){
+  return{
+    ...state
+  }
+}
+
+function mapDispatchToProps(dispatch){
+  return{
+		addToState : (value)=>{
+			const action={type : "ADD_TO_STATE", value}
+			dispatch(action);
+		}
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(withRouter(App));

@@ -1,0 +1,114 @@
+@media only screen and (min-width: 450px){
+	.contact_left_part{
+		width: 50%;
+		border-right: 2px solid darkgreen;
+	}
+}
+@media only screen and (min-width: 750px){
+	.contact_left_part{
+		width: 50%;
+	}
+	.contact_list{
+		max-height: 366px;
+	}
+}
+
+
+/* LEFT PART */
+
+.contact_left_part{
+	height: 100%;
+	background-color: seagreen;
+}
+.contact_left_header{
+	height: 60px;
+	background-color: darkslategrey;
+	display: flex;
+}
+.search_bar_close{
+	width: 100%;
+	display: flex;
+}
+.search_hide,
+.search_bar_open{
+	display: none;
+}
+.search_show{
+	margin: auto 20px;
+}
+.search_show input{
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: darkslategrey;
+	color: white;
+}
+.contact_left_header h3{
+	margin: auto 20px;
+}
+
+.search_icon_fa{
+	font-size: 25px;
+	margin: auto 20px;
+	cursor: pointer;
+}
+
+
+
+.create_contact{
+	display: flex;
+	height: 70px;
+	border-bottom: 1px solid darkgreen;
+	cursor: pointer;
+}
+.create_contact_logo{
+	margin: auto 10px;
+	height: 55px;
+	width: 55px;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: yellow;
+}
+.user_icon_fa{
+	position: relative;
+	font-size: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.create_contact h5{
+	margin: auto 10px;
+}
+
+
+
+.contact_list{
+	height: calc(100vh - 130px);
+	margin: auto 0;
+	width: 100%;
+	overflow: scroll;
+	background-color: tomato;
+}
+.contact_list::-webkit-scrollbar{
+	width: 0px;
+	height: 0px;
+}
+.contact_card{
+	display: flex;
+	height: 60px;
+	border-top: 1px solid darkgreen;
+}
+.contact_card_avatar{
+	margin: auto 10px;
+	height: 55px;
+	width: 55px;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: yellow;
+}
+.contact_card_avatar_img{
+	width: 55px;
+}
+.contact_card p{
+	margin: auto 10px;
+}
